@@ -1,20 +1,20 @@
 			---	JARO DOCUMENTATION	---
 
 
-JARO defines an standart format for reverse engineer reports of applications. The advantage of JARO is a clear defined data structure allowing users to generate graphs for easy analisis as allowing them to create tools to manipulate the data. Using XML as main format makes it known to the most of people out there and its extensible structure makes changes fast.
+SMAEF defines an standart format for reverse engineer reports of applications. The advantage of SMAEF is a clear defined data structure allowing users to generate graphs for easy analisis as allowing them to create tools to manipulate the data. Using XML as main format makes it known to the most of people out there and its extensible structure makes changes fast.
 
 There are unlimited manners to write a report of an analisis based on what the reverse
 engineer thinks its relevant. The reports layout needs to be understood first and if 
 we want to do M2M manipulations we need to adapt/write tools to work with that 
-particular report. It's useless to tell that this is inefficient. That's where JARO
+particular report. It's useless to tell that this is inefficient. That's where SMAEF 
 comes into the screen. By defining rules and formats as also providing tools to easily
-query and manipulate reports, JARO speeds up the whole reverse engineering process and 
+query and manipulate reports, SMAEF speeds up the whole reverse engineering process and 
 in the same time makes it easier for someone else to understand the analisis. As the
-format and layout is defined, JARO provides extensibility to the reports and also to the tools that manipulate the data. JARO users could collaborate on some reverse engineering of an application and easily merge their output.
+format and layout is defined, SMAEF provides extensibility to the reports and also to the tools that manipulate the data. SMAEF users could collaborate on some reverse engineering of an application and easily merge their output.
 
-This is the main idea behind JARO.
+This is the main idea behind SMAEF.
 
-JARO could so implement a whole bunch of features manipulating the data.
+SMAEF could so implement a whole bunch of features manipulating the data.
 
 Features:
 
@@ -31,13 +31,16 @@ Features:
 	Displaying analisis in an easy to read format displaying the malicious behaviour 	
 	of classes, packages or methods with an description.
 
+	4.Merging
+
+	Merging of generated XML files from plims together in an unique file.
 
 ____________
 
 Architecture:
 ___________
 
-The main file JARO is using XML format, from which is generated all the files
+The main file SMAEF is using is the XML format, from which is generated all the files
 described in "Features". As XML is a verbose and annoying language, we use a python library to generate the XML: PLIM.
 
 PLIM -> XML <-> JSON -> HTML
@@ -68,6 +71,10 @@ The html generation is based on the generated json file.
 
 PLIM tool is included in the package and with the help of plim compiler "plimc" it generates an XML file from its plimfile. The generated XML goes trough a formating phase with the help of xmllint and then a written XSD file validates the structure of the generated xml.
 
+5.Merging
+
+An python script has been coded to make it easier for the users to merge existing xml files allowing distributed work to be done. The tool checks if the same SHA256 is present in the XML files for consistency purpose.
+
 ______
 
 HOW TO
@@ -82,5 +89,13 @@ A file with an name with the SHA256 of the analised file and a plim extension ca
 
 Graph Generation
 
-In the directory "pythonGrap" there is the python script called pythonGraph.py
-Run ./pythonGraph.py jsonfile         to generate the graph of the .json file.
+In the directory "bin" there is the python script called generateGraph.py
+Run ./generateGraph.py jsonfile         to generate the graph of the .json file.
+
+
+Merging
+
+In the directory "bin" there is the python script called xmlMerger.py.
+Run ./xmlMerger.py firstXMLfile secondXMLfile	to generate the merged XML.
+
+
