@@ -1,4 +1,4 @@
-			---	JARO DOCUMENTATION	---
+			---	SMAEF DOCUMENTATION	---
 
 
 SMAEF defines an standart format for reverse engineer reports of applications. The advantage of SMAEF is a clear defined data structure allowing users to generate graphs for easy analisis as allowing them to create tools to manipulate the data. Using XML as main format makes it known to the most of people out there and its extensible structure makes changes fast.
