@@ -1,0 +1,14 @@
+/ xml.test
+
+--------------------------
+doctype xml 
+
+analisis
+ sha256
+ artefacts
+  artefact
+   where	/path to class, e.g: com.adsdk.adwo.h.H -> means in class H in pkg com.adsdk.adwo.h
+   what		/the artefact can be an attribute, a method, an URL, a String... whatever is malicious or benain
+   name		/the name of the "what", the method name, the URL, a given attribute
+   level	/an artefact can be mal ("malicious"), e.g: This method sends personal information or be ("bening"), e.g: that method encrypts some base64 strings
+   description	/Description of the artefact

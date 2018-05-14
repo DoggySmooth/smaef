@@ -1,0 +1,30 @@
+{
+    "analisis": {
+        "artefacts": {
+            "artefact": [
+                {
+                    "description": "It's a WebView that overlays the main screen displaying malicious adds",
+                    "level": "benign",
+                    "name": "d",
+                    "what": "attribute",
+                    "where": "com.adsdk.adwo.H"
+                },
+                {
+                    "description": "Converts an String into an encrypted base64 String",
+                    "level": "malicious",
+                    "name": "toString(var X)",
+                    "what": "method",
+                    "where": "com.adsdk.adwo.x"
+                },
+                {
+                    "description": "URL of the command and control server used by the malicious app",
+                    "level": "malicious",
+                    "name": "https://bhkjnl.commandandcontrol.cn",
+                    "what": "URL",
+                    "where": "com.sdk.L"
+                }
+            ]
+        },
+        "sha256": "vzuv124vzu1F247834352iubr4"
+    }
+}

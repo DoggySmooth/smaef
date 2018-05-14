@@ -1,0 +1,56 @@
+/ template.xml
+
+--------------------------
+
+doctype xml
+
+app
+ info
+  name
+  sha256
+  description
+  releasedate
+  malwaretype
+  family
+  sdk
+   targetsdk
+   minsdk
+   maxsdk
+  activities
+   activity
+  provider
+  permissions
+   permission
+
+ analisis
+  packages
+   pkg
+    name
+    classes
+     class
+      name
+      malicious
+      imports
+       import
+      attributes
+       attribute
+        name
+        type
+	malicious
+      methods
+       method
+        name
+	malicious
+        parameters
+         parameter
+          param
+          output
+          description
+          calls
+           call
+          return
+           class
+        description
+        calls
+         call
+        sha256
