@@ -10,7 +10,7 @@ print('<!DOCTYPE html><html lang="en"><head><title>Smoothin</title><meta name="d
 #Function that generates the content of the web page based on the JSON file
 def generateHTML(artefacts, sha256):
 
-	print('<div class="box-header"><a> Artefacts: '+sha256+'.apk</a></div>')
+	print('<div class="box-header"><a> Artefacts: '+str(sha256)+'.apk</a></div>')
 	
 	for artefact in artefacts:
 		where = artefact['where']

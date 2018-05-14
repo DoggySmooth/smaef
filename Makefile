@@ -39,5 +39,5 @@ html: $(targetJSON)
 
 graph: $(targetJSON)
 
-	@python3 ./bin/graph.py $(targetJSON) 
+	@python3 ./bin/generateGraph.py $(targetJSON) 
 	@rm Graph.gv
