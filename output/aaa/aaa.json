@@ -1,0 +1,58 @@
+{
+    "analysis": {
+        "data": {
+            "art": [
+                {
+                    "descr": "It's a WebView that overlays the main screen displaying malicious adds",
+                    "level": "benign",
+                    "loc": "com.adsdk.adwo/H",
+                    "name": "d",
+                    "tag": "Heavy",
+                    "type": "attribute"
+                },
+                {
+                    "descr": "Converts an String into an encrypted base64 String",
+                    "level": "malicious",
+                    "loc": "com.adsdk.adwo/x",
+                    "name": "toString(var X)",
+                    "type": "method"
+                },
+                {
+                    "descr": "URL of the command and control server used by the malicious app",
+                    "level": "malicious",
+                    "loc": "com.sdk/L",
+                    "name": "bhkjnl.commandandcontrol.cn",
+                    "type": "URL"
+                },
+                {
+                    "descr": "URL of the command and control server used by the malicious app",
+                    "level": "malicious",
+                    "loc": "com.sdk/L",
+                    "name": "bhkjnl.commandandafsd.afs",
+                    "type": "URL"
+                }
+            ]
+        },
+        "met": [
+            {
+                "access": "03042012",
+                "accessloc": "googleplay",
+                "author": "Smooth",
+                "date": "03041993",
+                "email": "smooth",
+                "permission": "shared",
+                "tags": "trojan,exploit,root"
+            },
+            {
+                "access": "01081998",
+                "accessloc": "googleplay",
+                "author": "Boo",
+                "date": "05091994",
+                "email": "boos",
+                "permission": "shared",
+                "tags": "trojan"
+            }
+        ],
+        "res": "sha256://bsaifbiasoujb2345F3k1bj4F3223r"
+    }
+}

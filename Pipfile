@@ -7,8 +7,7 @@ url = 'https://pypi.python.org/simple'
 
 [packages]
 
-funcy = "*"
-json = "*"
+ijson = "*"
 html5print = "*"
 
 [dev-packages]

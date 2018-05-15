@@ -120,6 +120,17 @@ body {
 	margin-top: 30px;
 
 }
+.box-body td{
+
+	width:25%;
+
+}
+.meta-body{
+
+	display: block;
+	overflow: auto;
+
+}
 
 table, td, th {
     border: 1px solid black;
@@ -134,5 +145,4 @@ th {
     height: 50px;
 }
 td {
-	width: 25%;
 	padding: 10px 10px 10px 10px;

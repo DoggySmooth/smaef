@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name="analisis">
+<xs:element name="analysis">
  <xs:complexType>
  <xs:sequence>
-  <xs:element name="sha256" type="xs:string"/>
-  <xs:element name="artefacts" >
+  <xs:element name="res" type="xs:string"/>
+  <xs:element name="met" maxOccurs="unbounded">
+   <xs:complexType>
+    <xs:sequence>
+
+     <xs:element name="date" type="xs:string"/>
+     <xs:element name="access" type="xs:string"/>
+     <xs:element name="accessloc" type="xs:string"/>
+     <xs:element name="author" type="xs:string"/>
+     <xs:element name="email" type="xs:string"/>
+     <xs:element name="permission" type="xs:string"/>
+     <xs:element name="tags" type="xs:string"/>
+
+    </xs:sequence>
+   </xs:complexType>
+  </xs:element>
+  <xs:element name="data" >
    <xs:complexType>
    <xs:sequence>
-    <xs:element name="artefact" maxOccurs="unbounded">
+    <xs:element name="art" maxOccurs="unbounded">
     <xs:complexType>
      <xs:sequence>
       
-      <xs:element name="where" type="xs:string"/>
-      <xs:element name="what" type="xs:string"/>
+      <xs:element name="loc" type="xs:string"/>
+      <xs:element name="type" type="xs:string"/>
       <xs:element name="name" type="xs:string"/>
       <xs:element name="level" type="xs:string"/>
-      <xs:element name="description" type="xs:string"/>
+      <xs:element name="descr" type="xs:string"/>
+      <xs:element name="tag" type="xs:string" minOccurs="0"/>
 
      </xs:sequence>
     </xs:complexType>

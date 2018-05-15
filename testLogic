@@ -1,4 +1,41 @@
-graph.py
+generateGraph.py
 
 jsonfile opened
-right 
+right extension
+graph is created right?
+	- single   artefact tag
+	- multiple artefact tag
+
+
+generateJSON.py
+
+right files opened?
+xml2json behaves right?
+jsonlint works?
+format JSON works?
+
+pythonHTML.py
+
+html generated right?
+
+xmlMerger.py
+
+right files loaded
+works?
+	- single tag
+	- multip tag
+
+
+generateHTML.py
+
+correct input?
+
+
+generateXML.py
+
+correct input files
+
+validate xml right
+format xml right
+
+

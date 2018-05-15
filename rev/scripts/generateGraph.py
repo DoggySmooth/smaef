@@ -1,8 +1,11 @@
+#!/usr/bin/env python3
+
 import json, re, graphviz as gv, sys
 
 def generateGraph(artefacts):
 
 	g = gv.Graph(format='svg')
+	g.format = 'svg'
 	regex = r"(.*)\/"
 	subst = ""
 
@@ -64,7 +67,7 @@ def main(args=None):
 
 	g = generateGraph(artefacts)
 	g.render()
-
+	print("Graph generated successfully")
 
 if __name__ == '__main__':
 	main()
