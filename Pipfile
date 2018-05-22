@@ -1,17 +1,15 @@
 [[source]]
-
 name = 'pypi'
 verify_ssl = true
 url = 'https://pypi.python.org/simple'
 
-
 [packages]
-
 ijson = "*"
+lxml = "*"
 html5print = "*"
+"e1839a8" = {editable = true, path = "."}
 
 [dev-packages]
-
 mypy = "*"
 yapf = "*"
 isort = "*"

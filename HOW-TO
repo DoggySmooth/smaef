@@ -1,12 +1,12 @@
---- JARO TEST ---
+					--- MET TEST ---
 
 
 
 STEPS:
 
 	1.CREATE A PLIM FILE WITH AN ANALISIS
-	2.PASTE IT IN JARO, I RESERVED A FOLDER "plims" FOR THIS
-	3.execute ./make
+	2.PASTE IT IN FOLDER "plims"
+	3.execute python3 amrev.py "plimFile"
 	4.ALL THE OUPUT IS AVAILABLE IN FOLDER "output/$(nameOfPlim)/"
 
 
@@ -21,90 +21,64 @@ By looking at it, we know how to structure our plim file. The cardinals shows if
 
 NOTE: ITS IMPORTANT TO TAKE CARE FOR A CORRECT INDENTATION.
 
-The first part are android app details.
+The first part are meta datas about the reverse
 
-app
- info
-  name
-  sha256
-  description
-  releasedate
-  malwaretype
-  family
-  sdk
-   targetsdk
-   minsdk
-   maxsdk
-  activities
-   activity
-  provider
-  permissions
-   permission
+analysis
+ res sha256://bsaifbiasoujb2345F3k1bj4F3223r
+ met
+  date 03041993
+  access 03042012
+  accessloc googleplay
+  author Smooth
+  email smooth
+  permission shared
+  tags trojan,exploit,root
+ met
+  date 05091994
+  access 01081998
+  accessloc googleplay
+  author Boo
+  email boos
+  permission shared
+  tags trojan
 
 As usual. That kind of information can be easily extracted from most reverse engineer tools for android app and put there for informative purpose.
 
-One intersting tag is the "activities" tag. 
-It should show which classes are activities, in other words, entrypoints for the app.
-MobSF is an fantastic tool that shows that information in a concise way. 
 
 NOW LETS MOVE ON WITH THE MAIN ANALISIS
 
- analisis
-  packages
-   pkg
-    name com.adwo.adsdk
-    malicious This package is involved in creating an WebView for misleading the user clicks to click on malicious adds. 
-    classes
-     class
-      name AdwoAdBroswerActivity
-      malicious AdwoAdBowserAcitivity creates a malicious WebView
-      imports
-       import com.adwo.adsdk.H
-      attributes
-        attribute
-         name d
-         type Handler
-         malicious This attribute is a Handler for executing commands within the WebView
-      methods
-        method
-         name Constructor
-         malicious The constructor instantiate the attribute "d" by calling com.adwo.adsdk.H()
-         parameters
-          parameter
-           param test
-           output test
-           description
-           return
-            class com.adwo.adsdk.H
-         sha256 BB4604AB45F65A30F66A14546A720F806A432A2BE374C88999D9C1793FECA68B
-   pkg
-    name com.test
-    classes
-     class
-      name NeverHearder
-      malicious That class contains an encryptor
-      imports
-      attributes
-      methods
-       method
-        name a(string)
-        malicious This method is an encryptor. It takes a string and encrypt the data with its subroutine.
-        parameters
-         parameter
-          param abcdef
-          output fedcba
-          description By testing various string we found that the encryptor reverts whatever string is passed as paramter.
-        sha256 cgfjhvkjlbkafiasvlasifbasiuohr3434rzft6i7tzug7o8rgzub32g23g23t2g42
- 
+ data
+  art
+   loc com.adsdk.adwo/H
+   type attribute
+   name d
+   level benign
+   descr It's a WebView that overlays the main screen displaying malicious adds
+   tag Heavy
+  art
+   loc com.adsdk.adwo/x
+   type method
+   name toString(var X)
+   level malicious
+   descr Converts an String into an encrypted base64 String
+  art
+   loc com.sdk/L
+   type URL
+   name bhkjnl.commandandcontrol.cn
+   level malicious
+   descr URL of the command and control server used by the malicious app
+  art
+   loc com.sdk/L
+   type URL
+   name bhkjnl.commandandafsd.afs
+   level malicious
+   descr URL of the command and control server used by the malicious app
+~                                                                         
 This plim file is self explanatory.
 
 So we finished step 1.
 
-Lets move our file in "plims" directory and run make.
-Some ouput is printed on the terminal.
-An warning occurs, html generator put an </div> extra.
-TidyHTML validator corrects automatically that mistake as its only a warning.
-
+Lets move our file in "plims" directory and run "run.py 'plimFile'" 
 We can now see in our output directory all the generated files.
 
 run 

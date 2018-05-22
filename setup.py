@@ -6,10 +6,14 @@ setup(
     packages=find_packages(),
     scripts=[
     
-	'bin/plimc',
-	'bin/xmllint',
-	'bin/jsonlint',
-	'bin/xml2json.py
-
+	'amrev.py',
+	'lib/xml2json.py',
+	'rev/scripts/generateGraph.py',
+	'rev/scripts/generateJSON.py',
+	'rev/scripts/generateHTML.py',
+	'rev/scripts/generateXML.py',
+	'rev/scripts/htmlPython.py',
+	'rev/scripts/xmlFormatter.py',
+	'rev/scripts/xmlMerger.py'
     ]
 )

@@ -1,20 +1,20 @@
-			---	SMAEF DOCUMENTATION	---
+			---	MET DOCUMENTATION	---
 
 
-SMAEF defines an standart format for reverse engineer reports of applications. The advantage of SMAEF is a clear defined data structure allowing users to generate graphs for easy analisis as allowing them to create tools to manipulate the data. Using XML as main format makes it known to the most of people out there and its extensible structure makes changes fast.
+MET defines an standart format for reverse engineer reports of applications. The advantage of MET is a clear defined data structure allowing users to generate graphs for easy analisis as allowing them to create tools to manipulate the data. Using XML as main format makes it known to the most of people out there and its extensible structure makes changes fast.
 
 There are unlimited manners to write a report of an analisis based on what the reverse
 engineer thinks its relevant. The reports layout needs to be understood first and if 
 we want to do M2M manipulations we need to adapt/write tools to work with that 
-particular report. It's useless to tell that this is inefficient. That's where SMAEF 
+particular report. It's useless to tell that this is inefficient. That's where MET
 comes into the screen. By defining rules and formats as also providing tools to easily
-query and manipulate reports, SMAEF speeds up the whole reverse engineering process and 
+query and manipulate reports, MET speeds up the whole reverse engineering process and 
 in the same time makes it easier for someone else to understand the analisis. As the
 format and layout is defined, SMAEF provides extensibility to the reports and also to the tools that manipulate the data. SMAEF users could collaborate on some reverse engineering of an application and easily merge their output.
 
-This is the main idea behind SMAEF.
+This is the main idea behind MET.
 
-SMAEF could so implement a whole bunch of features manipulating the data.
+MET could so implement a whole bunch of features manipulating the data.
 
 Features:
 
@@ -84,18 +84,12 @@ ______
 Files creation
 
 All the tools are included in this package token from github.
-A file with an name with the SHA256 of the analised file and a plim extension can be pasted in the root of this project. Executing "make" automatically takes the .plim extension from the "plims" folder and generate all the data. The output directory paste the result of the above explained features.
-
-
-Graph Generation
-
-In the directory "bin" there is the python script called generateGraph.py
-Run ./generateGraph.py jsonfile         to generate the graph of the .json file.
+A file with an name with the SHA256 of the analised file and a plim extension can be pasted in the root of this project. Executing "python3 run.py 'plimFile'" automatically  generate all the data. The output directory paste the result of the above explained features.
 
 
 Merging
 
-In the directory "bin" there is the python script called xmlMerger.py.
-Run ./xmlMerger.py firstXMLfile secondXMLfile	to generate the merged XML.
+In the directory "met/scripts/" there is the python script called xmlMerger.py.
+Run ./xmlMerger.py 'firstXMLfile' 'secondXMLfile'	to generate the merged XML.
 
 
