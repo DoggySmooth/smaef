@@ -1,0 +1,110 @@
+Artefacts analisis
+
+dex::string::fsad.htmlcontent
+
+rgrep ->	found AdwoSplashAdActivity using it
+
+	this.a.c("fsad.htmlcontent")
+
+	this.a = instance of class n
+
+	n.c(String string) calls class x
+
+		CLASS	x
+	
+		Is a threat who calls n.a.loadURL
+
+		n.a is a WebView
+
+		calls an url in the webview of the application
+
+
+Combined with class E, that could trigger specific functions as download apk, img, call
+See Class E analisis for more details.
+
+dex::invoke::i<init>
+
+Is a thread which run an function setting up an httpclient, going trough an proxy 
+and downloading files. As it's run in the context of an relativelayout. It 
+seems to download ads and display them in that class.
+Analisis based on smali analisis. Code is undecompilable.
+
+
+dex::string::sqlite
+class a responsible to set up an database and manipulate it
+
+
+dex::string::http://r2.adwo.com
+
+Searching for string lead us to class S
+It got bytes arrays, looks like a class used to decrypt files.
+Got a matrix of extensions + mime types.
+__________________________________________________
+
+Activities analisis
+
+AdwoAdBrowserActivity
+AdwoAdSplashActivity
+
+See Annexe files for more details
+
+____________________________________________________
+
+Alphabet file + Relation file inspection
+
+CLASS E
+
+	Its the WebViewClient class loaded in class n.
+
+	Malicious
+
+	Capable of trigger intents and actions based on url.
+	apks and img are written to SD by calling n-class functions.
+	See Class E for more Details.
+
+
+CLASS n
+
+	using to navigate in browser 
+	has an handler who reacts when get a message which finish an activity
+	Handles view, setvisiblity, draw on screen
+	
+	Malicious
+
+	Is able to write to sd
+		images
+		apks
+
+by combining these two the attacker can write files to the system
+by providing own crafted urls
+Deeper understanding in class n/E analisis file
+
+	ALSO:
+
+		calling class y
+	
+		which is able to load files from an URL
+		Files downloaded and written into the db could be used.
+
+CLASS b
+
+	mananging views
+
+	Malicious
+
+	has an undecompilable part of code in class J which sets up an http client and p	proxy. Potential download of an AD which is then displayed in the relative view
+	frame.
+	Provided by smali analisis.
+
+
+Class AdwoAdView extends Relative layout, in other words class b, which is able to downlaod ads.
+
+____________________________________-
+
+
+SUSPECT CLASSES
+
+CLASS R		-> using FSAd. Respond to bytes recived and decrypt them or throws errors.
+
+CLASS m		-> need Read Phone State Permission. Sensitive Data exfiltration?
+CLASS V		-> Decryptor, Also Bitmap related classes... decrypting Bitmap?

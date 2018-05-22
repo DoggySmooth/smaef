@@ -13,7 +13,7 @@ def generateHTML(json, html):
 	file = open("tmp.html","w")
 
 	#Generates an unformatted html file from an json file
-	os.system("python3 ./rev/scripts/htmlPython.py "+json+" "+html)
+	os.system("python3 ./met/scripts/htmlPython.py "+json+" "+html)
 
 	#Writes the unformatted html file into our temporary html file formatted
 	file.write(HTMLBeautifier.beautify(open(html), 4))

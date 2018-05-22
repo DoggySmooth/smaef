@@ -11,14 +11,6 @@ analysis
   email 
   permission 
   tags 
- met
-  date 
-  access 
-  accessloc 
-  author 
-  email 
-  permission 
-  tags
  data
   art
    loc
@@ -27,22 +19,3 @@ analysis
    level
    descr
    tag
-  art
-   loc 
-   type
-   name 
-   level
-   descr
-  art
-   loc 
-   type
-   name
-   level 
-   descr
-  art
-   loc
-   type
-   name
-   level 
-   descr
-~                                                                         

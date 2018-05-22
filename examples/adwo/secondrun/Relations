@@ -1,0 +1,56 @@
+Class	n
+	
+	Class A -> goBack() button WebView
+	Class C -> new Handler()
+	Class D -> handles WebView Calls
+	Class E -> triggers actions based on urls
+	class G -> Threat which calls func from n to write to SD
+	Class o -> calls a func of n that finishes an activity
+	class p ->
+	class q ->	Check AdwoAdActivity
+	class t ->
+
+Class	b 	RelativeLayout
+
+	Class c -> smth visible, smth invisible
+	Class d -> set visiblity of an object to 0 
+	Class e -> on click calls f which calls 2 funcs
+	Class f -> 
+	Class g -> dialoginterface.cancel()
+	Class h -> calls k threat -> undecompilable
+	Class i -> calls k threat
+	Class J -> undecompilable code -> addView calls m.c((String)this.b.d().h.get(j)) 
+		m.c((String)this.b.d().h.get(j));
+		http request to download smth
+
+	class k -> gets an ad from adwoservers by smali analisis and Intend to view to d		   isplay
+		
+Class	I
+
+	Class J
+
+Class	E
+
+	Class F
+
+Class	AdBrowserActivity
+
+Class	AdwoAdView
+
+	Class I
+	Class K
+	Class M
+
+Class	N
+
+	Class O
+
+
+Class	j
+
+	class k
+
+Class	AdwoSplash
+
+	class P
+

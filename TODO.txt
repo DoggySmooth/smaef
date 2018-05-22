@@ -1,0 +1,36 @@
+- review setup.py
+- scripts (like ansible): put bin/ in met/scripts/
+	https://github.com/fmind/onset/blob/master/setup.py
+  - met: generate analysis (xml)
+  - met-report: generate report (html)
+  - met-index: generate ES index (json)
+  - met-merge: merge analysis file (xml)
+  - met-graph: generate artifact graph (dot)
+- put lib content in met
+- rm output
+- use jinja2 for html template
+- use advanced type in schema (e.g. anyURI)
+  - permission - perm
+  - accessloc - location
+  - access and date - type date
+  - descr - desc
+  - tag - tags
+- use purecss for style with cdn
+- add in schema
+- put res in met
+- put plim in examples
+- put function in met module
+  - met/report.py
+  - met/graph.py
+  - met/index.py
+  - met/compile.py
+- docstring for each module and function
+- use argparse in each script
+- print every output to stdout, log message in stderr (use logging module with basicConfig)
+- use template for generate
+- remove every os.system
+- xmltodict for conversion
+- no need to validate json if it was generated
+- put all file for test in test/res
+- use fixture if it make sense
+- use makefile for project from onset

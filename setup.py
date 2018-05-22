@@ -6,14 +6,14 @@ setup(
     packages=find_packages(),
     scripts=[
     
-	'amrev.py',
+	'ammet.py',
 	'lib/xml2json.py',
-	'rev/scripts/generateGraph.py',
-	'rev/scripts/generateJSON.py',
-	'rev/scripts/generateHTML.py',
-	'rev/scripts/generateXML.py',
-	'rev/scripts/htmlPython.py',
-	'rev/scripts/xmlFormatter.py',
-	'rev/scripts/xmlMerger.py'
+	'met/scripts/generateGraph.py',
+	'met/scripts/generateJSON.py',
+	'met/scripts/generateHTML.py',
+	'met/scripts/generateXML.py',
+	'met/scripts/htmlPython.py',
+	'met/scripts/xmlFormatter.py',
+	'met/scripts/xmlMerger.py'
     ]
 )

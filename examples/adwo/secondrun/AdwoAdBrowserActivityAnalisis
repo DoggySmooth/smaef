@@ -1,0 +1,73 @@
+static String[] b = new String[]{"explode", "toptobottom", "bottomtotop"};
+private static boolean c;
+private n a;
+private Handler d;
+
+Constructor() { calls H function to instantiate d } 
+
+	H	CLASS		ANALISIS
+
+	message handler to get messages
+	message.what ( extract user defined data)
+	if 1:
+		calls 2 functions
+
+		AdwoAdBrowserActivity.a((boolean)true);
+                AdwoAdBrowserActivity.a((AdwoAdBrowserActivity)this.a).c();
+
+		
+	H	METHOD		AdwoAdBrowserActivity.a((boolean)true);
+
+	Sets c variable of this instance of n to true
+
+	
+	H	METHOD		AdwoAdBrowserActivity.a((boolean)true);
+	
+	Takes instance of n and call its function c()
+
+		n	METHOD		c()
+
+		checks if its g RelativeLayout = null -> break
+		sets g visibility to 0
+		g.start animation  from X=0.0 to X=1.0
+		creates new AnimationListener q (see specs)
+		calls 3 functions
+			this.a(true);
+        		this.b(true);
+        		this.c(true);
+
+			a		b		c
+
+		checks	k		e		f
+
+		type	ImageView	Button		Button
+
+		calls 	new p		new z		new A
+
+			OnclickListeners for View
+			
+		return	n.m = B		n.WV.goforward	n.WV.goback
+
+			B	CLASS
+
+			an interface implementing method a()
+
+			AdwoSplashAdActivity implements B
+
+			public final void a(){ 
+        			this.setResult(998);
+        			this.finish();}
+    						
+
+
+
+onCreate
+bundle bundle2
+n instance
+if get url intend
+	sets n.WebView this link
+else
+	sets n.WebView to adwo
+c = false
+handler send message (1, 5000)
+

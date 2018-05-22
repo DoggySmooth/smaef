@@ -1,0 +1,12 @@
+WebViewClient
+
+public final boolean shouldOverrideUrlLoading(WebView var1_1, String var2_2) {}
+
+tel, sms, market, http
+
+Remote commands?
+
+when string x is found in the url, it triggers an call to another class
+which run as an threat calling the storing functions found in class n
+
+

@@ -1,0 +1,62 @@
+<analysis>
+  <res>sha256://voasid23r2viz141ir5v13412312rv12o</res>
+  <met>
+    <date>22052018</date>
+    <access>22052018</access>
+    <accessloc>Androzoo</accessloc>
+    <author>Smooth</author>
+    <email>smooth@smooth.smooth</email>
+    <permission>shared</permission>
+    <tags>exfiltration,adware</tags>
+  </met>
+  <data>
+    <art>
+      <loc>com.adwo.adsdk/E</loc>
+      <type>Class</type>
+      <name>E</name>
+      <level>malicious</level>
+      <descr>Capable of trigger intents and actions based on url. Apks and img are written to SD bycalling n-class functions.</descr>
+      <tag>remote</tag>
+    </art>
+    <art>
+      <loc>com.adwo.adsdk/n</loc>
+      <type>Class</type>
+      <name>n</name>
+      <level>malicious</level>
+      <descr>It's able to write to sd, images and apks.</descr>
+      <tag>IO,SD</tag>
+    </art>
+    <art>
+      <loc>com.adwo.adsdk/y</loc>
+      <type>Class</type>
+      <name>y</name>
+      <level>malicious</level>
+      <descr>load files from an url and can write it to the database.</descr>
+      <tag>db</tag>
+    </art>
+    <art>
+      <loc>com.adwo.adsdk/b</loc>
+      <type>Class</type>
+      <name>b</name>
+      <level>malicious</level>
+      <descr>has an undecompilable code that sets up an http client and a proxy. Potential download of an AD.</descr>
+      <tag>httpclient,proxy</tag>
+    </art>
+    <art>
+      <loc>com.adwo.adsdk/R</loc>
+      <type>Class</type>
+      <name>R</name>
+      <level>bening</level>
+      <descr>using FSAd. Respond to bytes recieved and decrypt them.</descr>
+      <tag>encryptor</tag>
+    </art>
+    <art>
+      <loc>com.adwo.adsdk/m</loc>
+      <type>Class</type>
+      <name>m</name>
+      <level>bening</level>
+      <descr>need Read Phone State Permission. Sensitive data exfiltration?</descr>
+      <tag>exfiltration</tag>
+    </art>
+  </data>
+</analysis>

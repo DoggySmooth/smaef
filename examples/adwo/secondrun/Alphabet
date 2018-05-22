@@ -1,0 +1,196 @@
+A
+
+n.WebView.GoBack on click
+
+a
+
+CREATE TABLE IF NOT EXISTS adwo_db( ID integer primary key,imgName varchar,downloadTime date,imgData blob
+
+Create database and manipulation methods
+
+B
+
+interface implementin a function a()
+
+b
+Handling gesture, reacting when smth happens
+
+public C(n n2, Activity activity) {
+Give Handler back
+
+c
+hide show something out of class b
+
+D
+WebChromeClient
+
+d
+hide smth out of class b.a
+
+E
+shouldOverrideUrlLoading
+This functions checks the URI and if specific strings come into he will trigger
+an action.
+Somethimes calling write functions to the SD for apkŝ and img.
+Always sending an intent and calling an activity.
+
+Using this functions to send commands to the infected phone.
+
+e 
+this.a.postDelayed((Runnable)new f(this), 500);
+onclick of dialog
+
+F
+its a theat run something based on an instance of E
+
+f
+runs some commands out of b based on en insance of e
+
+G
+
+runs something based on an instance of E
+
+g
+
+  public final void onClick(DialogInterface dialogInterface, int n) {
+        dialogInterface.cancel();
+
+h
+
+runs somwrthing based on instamce of b
+
+I
+
+Threat doing stuff to an AdView
+
+
+i
+
+does smth to b
+
+
+J
+Combines somehowe an instance of I and b
+Code undecompilable
+
+
+j
+has an instance of l
+has an a function doing ->new k(this).start();
+
+K
+runnng an function of AdwoAd
+
+
+k
+Threat based on instance of j does smth
+undecompilable code
+
+
+L
+animations mixing a b Q
+
+l
+interface e()  f()
+
+
+M
+BCR screen on, screen off doing smth to AdwoAdView
+
+m
+Suspicious Class
+decoder? system(phone) call, languages
+
+N Threat
+b Q AdwoAdView
+b instance = smth
+doing some animations
+
+O
+manipulating N instance
+
+o
+handler for N
+
+
+P
+Handler for AdwoSplash
+
+p
+onclick view do stuff to n
+
+Q
+3 instances of Q
+Enum
+
+q
+manipulation animations of n
+
+
+R 
+decoder?
+
+r Threat
+using toast to make a message 
+Context of an activity
+could be anything but its used with n
+
+S Class
+Suspect
+some arrays
+returns paths?
+
+
+s same as r
+
+T
+Pacrelcreator FSAd
+
+
+t
+public final boolean onTouch(View view, MotionEvent motionEvent) {
+        return n.c((n)this.a).onTouchEvent(motionEvent);
+for n
+
+
+u
+animations for n
+
+U
+FSAd util
+does stuff in backgroud
+
+V
+decoder maybe for bitmaps
+
+/v = u
+
+W
+Bitmap class
+
+w = v = u
+
+
+X Threat
+seems like doing smth with images
+
+
+x
+
+ public final void run() {
+        this.a.a.loadUrl(this.b);
+    }
+in webView of n
+
+
+Y
+matrix transformations?
+
+
+y
+for n
+load html from database
+
+z
+onclick go forwar
+  

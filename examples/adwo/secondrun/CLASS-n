@@ -1,0 +1,51 @@
+Analisis for the class n
+
+
+creates an WeakReference array.
+And i don't understand if it calls itself?
+
+Creates an notification manager
+Creates an notification ->  (CharSequence)"\u7a0b\u5e8f\u4e0b\u8f7d\u5b8c\u6210"
+
+this.h = new RelativeLayout((Context)activity2);
+	RelativeLayout used to display Ads
+
+this.a = new WebView((Context)activity3);
+
+this.a.setWebViewClient((WebViewClient)new E(this));
+this.a.setWebChromeClient((WebChromeClient)new D(this));
+this.a.addJavascriptInterface((Object)new C(this, activity3), "interface");
+
+this.p = new GestureDetector((GestureDetector.OnGestureListener)this);
+
+
+
+
+METHOD		static void a(n n2, String string, Activity activity) {}
+
+Loads strings with SD in it
+Decoder?
+
+activity.runOnUiThread((Runnable)new s(n2, activity, string2));
+s makes a message with toast
+
+default httpclient
+which downloads data and store it in folder adwo on SD
+sends an new intent as VIEW
+uri to save data is all related to image types
+
+
+METHOD 		final void a(String string, Activity activity) {}
+
+same as above but for apk
+intent.setDataAndType(uri, "application/vnd.android.package-archive");
+
+
+
+
+METHOD 		static void a(n n2, boolean bl) {}
+
+finishing an activity by animate it out
+
+
+

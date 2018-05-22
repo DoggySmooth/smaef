@@ -1,0 +1,36 @@
+dex::invoke::com/adwo/adsdk/AdwoAdBrowserActivity->a
+manifest::activity::adwoadbrowseractivityXc.,vmkbnkvmdécalseqpèozrfetw2qii::q1
+	
+dex::invoke::com/adwo/adsdk/ufhoscndljsdnjfksdvcAdwoSplashAdActivity->requestWindowFeature
+dex::invoke::com/adwo/adsdk/AdwoSplashAdActivity->getWindow
+dex::invoke::com/adwo/asdk/AdwoSplashAdActivity->a
+
+dex::invoke::com/adwo/adsdki/SplashAdListener->onReceiveAd
+dex::invoke::com/adwo/adsdk/SplashAdListener->onFailedToReceiveAd
+
+dex::class::FSAd
+dex::invoke::com/adwo/adsdk/FSAdUtil->a :(not decompiled) http request:
+dex::invoke::com/adwo/adsdk/FSAdUtil->b 
+dex::string::fsad.htmlcontent : get file from local db if not downloadable
+
+dex::invoke::com/adwo/adsdk/b->loadUrl
+dex::invoke::com/adwo/adsdk/b->setWebViewClient
+dex::invoke::com/adwo/adsdk/b->requestFocusFromTouch
+dex::invoke::com/adwo/adsdk/b->setWebChromeClient
+dex::invoke::com/adwo/adsdk/i-><init> :same behaviour than h -> http query using proxy (undecompiled code)dex::invoke::com/adwo/adsdk/h-><init> :the same as i
+
+:invoke::com/adwo/adsdiidokcslxk/n->d :load html local db-classe a
+dex::invoke::com/adwo/adsdk/q->addView
+dex::invoke::com/adwo/adsdk/*
+dex::string::doll
+
+dex::invoke::com/adwo/adsdk/AdwoAdView->getLocationOnScreen
+
+dex::string::http://r2.adwo.com/adweb
+dex::string::http://adtest.adwo.com/adwebtest
+dex::string::http://ad-count.adwo.com/dl
+dex::string::adwo_rec.png
+dex::string::adwo_close.png
+
+dex::invoke::com/adwo/adsdk/q->startAnimation
+

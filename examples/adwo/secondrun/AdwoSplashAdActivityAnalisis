@@ -1,0 +1,62 @@
+
+static String[] b = new String[]{"explode", "toptobottom", "bottomtotop"};
+private static boolean c;
+n a;
+private Handler d;
+
+
+Constructor() { calls P  function to instantiate d }
+
+	P	CLASS		ANALISIS
+
+	message handler to get messages
+	message.what ( extract user defined data )
+	if 1:
+		calls 2 functions:
+
+		AdwoSplashAdActivity.a((boolean)true);
+                this.a.a.a(true);
+
+	P	METHOD		AdwoSplashAdActivity.a((boolean)true);
+	
+	sets c variable to true
+
+
+
+	P	METHOD		this.a.a.a(true); this.a.a = n
+
+	check n.k 
+	Imageview
+	new P -> onclicklistener -> B Class -> interface implementing method a()
+	public final void a(){
+
+		this.setResult(998);
+		this.finish();}
+
+OnCreate()
+
+FSAd fSAd = (FSAd)this.getIntent().getParcelableExtra("FSAd");
+Bundle bundle2 = this.getIntent().getExtras();
+this.a = new n((Activity)this, n2, l, b[(int)(3.0 * Math.random())], bl3, bl, bl2);
+this.setContentView((View)this.a);
+
+checks fsad.i if null
+if fsad.i.startswith  http
+	this.a.c(fsAd.htmlcontent)
+		run a Thread x
+			which load an url to n.WV
+	else
+		run a Thread y
+			which load an html from the database
+			WebView.loadDataWithBaseUrl
+
+checks fsad.d != null
+	Log.e((String)"doll", (String)string);
+	this.n = string;
+else
+	load url from adwo.com
+
+c = false
+this.handler message  (1, 5000)
+
+		

@@ -1,9 +1,0 @@
-graph {
-	packages [shape=square]
-	"com.adsdk.adwo"
-	packages -- "com.adsdk.adwo"
-	attribute
-	d [label=d fillcolor=yellow style=filled]
-	"com.adsdk.adwo" -- attribute
-	attribute -- d
-}

@@ -1,0 +1,67 @@
+Oncreate
+request window activity -> draws an window on the UI! Adware presence?
+
+Activity which draws a class on the screen
+The class should have malicious behaviour
+
+AdwoAdBrowserActivity.a((boolean)true);
+set a bool to TRUE
+	
+	Analisis of the Handler
+	Constructor assign the handler by calling H.class!
+
+	Investigating H.class
+	
+	
+	2Function Calls
+
+	set a bool to true in AdwoAdBrowserActivity
+	Makes a view transparent -> RelativeLayout and move it out of the screen but
+	starts an active Listener
+
+	He then does the same with two buttons and a View
+
+	LETS INVESTIGATE THE CALLED CLASSES AS LISTENER	
+
+	p z q A
+
+	RelatoveLayout Hidding calling q class
+
+	q class overwirtes animations but funcs are empty!
+
+	ImageView class p
+
+	call to n.d which gives M back which is a method implemented in SplashAdActivity
+	
+	public final void a() {
+        this.setResult(998);
+        this.finish();
+    				}
+	afterwards it finish an activity from the WeakRefernece Queue and starts an
+	translation to go out of the screen
+
+
+	z
+
+	WebView go forward
+
+	A go back
+
+	
+
+
+
+Analizing Contruxtor of n class!
+_________________________________
+
+
+Notification has as strange string
+
+
+Calls E D C
+
+this.a.setWebViewClient((WebViewClient)new E(this));
+this.a.setWebChromeClient((WebChromeClient)new D(this));
+this.a.addJavascriptInterface((Object)new C(this, activity3), "interface");
+       
+	

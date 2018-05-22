@@ -1,0 +1,24 @@
+Activity Calls P as Handler
+Lets investigate P
+
+Set c = true
+Set ImageViewK true! n.a(true)
+
+OnCreate
+
+Instanciate class FSAd
+Instanciate Bundle2
+
+Makes new Activity n
+
+n.c("fsAd.htmlContent" = VAR)
+create instance of X -> Threat
+n.WebViewA.loadUrl(VAR);
+
+ELSE
+
+same but loads data html from database
+
+:wq
+
+

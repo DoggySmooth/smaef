@@ -3,20 +3,20 @@ doctype xml
 
 analysis
  res			/1..1 
- met			/1..*
-  date 
-  access 
-  accessloc 
-  author 
-  email 
-  permission 
-  tags 
+ met	-------------	/1..*
+  date			/1..1 
+  access 		/1..1
+  accessloc 		/1..1
+  author 		/1..1
+  email 		/1..1
+  permission 		/1..1
+  tags 			/1..1
  data			/1..1
-  art			/1..*
-   loc
-   type
-   name 
-   level
-   descr
-   tag
+  art	-------------	/1..*
+   loc			/1..1
+   type			/1..1
+   name 		/1..1
+   level		/1..1
+   descr		/1..1
+   tag			/1..1
 ~                                                                         

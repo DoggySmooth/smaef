@@ -4,12 +4,12 @@ import sys
 import os
 import json
 
-import rev.scripts.xmlMerger as merger
-import rev.scripts.xmlFormatter as formatter
-import rev.scripts.generateXML as generateXML
-import rev.scripts.generateJSON as generateJSON
-import rev.scripts.generateHTML as generateHTML
-import rev.scripts.generateGraph as generateGraph
+import met.scripts.xmlMerger as merger
+import met.scripts.xmlFormatter as formatter
+import met.scripts.generateXML as generateXML
+import met.scripts.generateJSON as generateJSON
+import met.scripts.generateHTML as generateHTML
+import met.scripts.generateGraph as generateGraph
 
 from lxml import etree
 
